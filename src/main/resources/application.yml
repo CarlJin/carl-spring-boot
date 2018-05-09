@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://192.168.1.90:3306/db_nono?useSSL=false
+    data-username: yanfa
+    data-password: yanfa#123
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+management:
+  security:
+    enabled: false
+
+persion:
+    name: jintao
+    age: 26
+    desc: ${persion.name} is writing ${persion.age}
