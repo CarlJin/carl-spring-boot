@@ -1,7 +1,6 @@
 package com.ss;
 
 import com.ss.controller.HelloController;
-import com.ss.dao.AccNoticeUserInfoMapper;
 import com.ss.po.AccNoticeUserInfo;
 import org.junit.Before;
 import org.junit.Test;
@@ -22,7 +21,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class CarlSpringBootApplicationTests {
 
     @Autowired
-    private AccNoticeUserInfoMapper accNoticeUserInfoMapper;
 
     private MockMvc mvc;
 
@@ -41,7 +39,6 @@ public class CarlSpringBootApplicationTests {
     @Test
     public void test(){
 
-        AccNoticeUserInfo jintao = accNoticeUserInfoMapper.findOne("jintao");
-        System.out.println(jintao);
+        System.out.println("");
     }
 }
